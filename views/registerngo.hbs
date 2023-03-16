@@ -1,0 +1,61 @@
+{{>head}}
+<title>Company | Register</title>
+{{>navbar}}
+<div style="width: 60%; margin:auto;">
+    <h5 class="heading">
+            Register as NGO
+    </h5>
+    {{#if error}}
+    <div class="alert alert-danger" role="alert">
+        {{message}}
+    </div>
+    {{/if}}
+    <form action="/registerngo" method="post">
+        <div class="row">
+            <div class="mb-3 col-md-12">
+                <label class="form-label textcolor2">Name of NGO</label>
+                <input type="text" class="form-control" id="namen" name="name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-3 col-md-12">
+                <label class="form-label textcolor2">Location</label>
+                <input type="text" class="form-control" id="location" name="location">
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-3 col-md-4">
+                <label class="form-label textcolor2">Name of Head</label>
+                <input type="text" class="form-control" id="nameofhead" name="headname">
+            </div>
+            <div class="mb-3 col-md-4">
+                <label class="form-label textcolor2">Speciality</label>
+                <input type="text" class="form-control" id="speciality" name="speciality">
+            </div>
+            <div class="mb-3 col-md-4">
+                <label class="form-label textcolor2">Email</label>
+                <input type="email" class="form-control" id="email" name="email">
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-3 col-md-6">
+                <label class="form-label textcolor2">Username</label>
+                <input type="text" class="form-control" id="username" name="username">
+            </div>
+            <div class="mb-3 col-md-6">
+                <label class="form-label textcolor2">Password</label>
+                <input type="password" class="form-control" id="password" name="password">
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-3 col-md-12">
+                <div class="mb-3">
+                    <label class="form-label textcolor2">Attach your Profile Photo</label>
+                    <input class="form-control" type="file" id="photo">
+                </div>
+            </div>
+        </div>
+    <button type="submit" class="btn heading">Register</button>
+    </form>
+</div>
+{{>footer}}

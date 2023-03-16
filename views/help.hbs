@@ -1,0 +1,18 @@
+{{>head}}
+<title textcolor1>Company | Help</title>
+{{>navbar}}
+<div class="container-fluid d-flex">
+    {{#each data}}
+        <div class="card m-2" style="width: 18rem;">
+            <img src="{{photo}}" class="card-img-top"
+                alt="..." style="max-height:70%;">
+            <div class="card-body">
+                <h5 class="card-title textcolor1">{{name}}</h5>
+                <h6 class="textcolor2">Age - {{age}}</h6>
+                <h6 class="textcolor2">Location - {{location}}</h6>
+                <a href='/profilechild?_id={{_id}}' class="btn heading mt-3">Help this Kid</a>
+            </div>
+        </div>
+    {{/each}}   
+</div>
+{{>footer}}

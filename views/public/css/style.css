@@ -1,0 +1,93 @@
+    *{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color:#EBE8E7 !important;
+}
+.background1{
+    background-color: #EBE8E7 !important;
+    border-style: none !important;
+}
+.background2{
+    background-color: #EDF5E1 !important; 
+}
+.textcolor{
+    color: #9c64ea !important;
+    font-weight: bold;
+}
+.textcolor1{
+    color: #EA7186 !important;
+}
+.textcolor2{
+    color: #9c64ea !important;
+}
+.textcolor3{
+    color:#772ae1;
+}
+.icon{
+    color: white !important;
+    font-size: 30px !important;
+}
+.heading{
+    background-color: #9c64ea !important;
+    color: white !important;
+    text-align: center;
+    padding: 10px;
+}
+p{
+    text-align: justify;
+    padding: 10px;
+}
+.imgcontain{
+    height: 200px;
+    width:300px;
+    object-fit: contain;
+}
+.imgabout{
+    height: 400px;
+    width:400px;
+    object-fit: contain;
+}
+.teamimg{
+    height: 300px;
+    width:300px;
+    object-fit: contain;
+}
+
+.flat{
+    border-radius: 0px !important;
+}
+.position{
+    margin-top: 400px !important;
+    margin-left: 20%;
+}
+.position1{
+    margin-top: 400px !important;
+    float: right;
+}
+.position1{
+    margin-top: 400px !important;
+    float: right;
+}.position2{
+    margin: 0px auto !important;
+    float: right;
+}
+
+.child-profile-img{
+    width: 600px !important;
+}
+
+.profilechildsection{
+    margin-left:30px;
+    width:600px;
+}
+.card-title-profilechild{
+    margin:3px;
+    /* color: #EA7186 !important; */
+    font-size: large;
+}
+.cardservices{
+    border: solid 1px #9c64ea !important;
+    margin: 10px;
+}

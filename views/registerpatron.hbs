@@ -1,0 +1,63 @@
+{{>head}}
+<title>Company | Register</title>
+{{>navbar}}
+<div style="width: 60%; margin:auto;">
+    <h5 class="heading">
+        Register as Patron
+    </h5>
+    {{#if error}}
+    <div class="alert alert-danger" role="alert">
+        {{message}}
+    </div>
+    {{/if}}
+    <form action="/registerpatron" method="post">
+        <div class="row">
+            <div class="mb-3 col-md-6">
+                <label class="form-label textcolor2 fw-normal">First Name</label>
+                <input type="text" class="form-control" id="firstname" name="firstname">
+            </div>
+            <div class="mb-3 col-md-6">
+                <label class="form-label textcolor2 fw-normal">Last Name</label>
+                <input type="text" class="form-control" id="lastname" name="lastname">
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-3 col-md-2">
+                <label class="form-label textcolor2 fw-normal">Age</label>
+                <input type="text" class="form-control" id="age" name="age">
+            </div>
+            <div class="mb-3 col-md-2">
+                <label class="form-label textcolor2 fw-normal">Gender</label>
+                <input type="text" class="form-control" id="gender" name="gender">
+            </div>
+            <div class="mb-3 col-md-4">
+                <label class="form-label textcolor2 fw-normal">Phone</label>
+                <input type="text" class="form-control" id="phone" name="phone">
+            </div>
+            <div class="mb-3 col-md-4">
+                <label class="form-label textcolor2 fw-normal">Email</label>
+                <input type="email" class="form-control" id="email" name="email">
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-3 col-md-6">
+                <label class="form-label textcolor2 fw-normal">Username</label>
+                <input type="text" class="form-control" id="username" name="username">
+            </div>
+            <div class="mb-3 col-md-6">
+                <label class="form-label textcolor2 fw-normal">Password</label>
+                <input type="password" class="form-control" id="password" name="password">
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-3 col-md-12">
+                <div class="mb-3">
+                    <label class="form-label textcolor2 fw-normal">Attach your Profile Photo</label>
+                    <input class="form-control " type="file" id="photo">
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn heading">Register</button>
+    </form>
+</div>
+{{>footer}}

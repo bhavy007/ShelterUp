@@ -1,0 +1,24 @@
+{{>head}}
+<title>Company | Profile</title>
+{{>navbar}}
+<div class="container">
+    <h5 class="heading">
+        Child Profile
+    </h5>
+    <div class="d-flex justify-content-between">
+    <div class="mb-3 profilechildsection">
+        <img src="{{data.photo}}" class="child-profile-img">
+    </div>
+    <div class="profilechildsection">
+            <h5 class="card-title-profilechild mb-2">Name - {{data.name}}</h5>
+            <p class="card-title-profilechild">Father Name - {{data.fathersname}}</p>
+            <p class="card-title-profilechild">Mother Name - {{data.mothersname}}</p>
+            <p class="card-title-profilechild">Age - {{data.age}}</p>
+            <p class="card-title-profilechild">Location - {{data.location}}</p>
+            <p class="card-title-profilechild">Needs - {{data.needs}}</p>
+            <p class="card-title-profilechild">City - {{data.city}}</p>
+            <p class="card-title-profilechild">State - {{data.state}}</p>
+
+    </div>    
+    </div>
+{{>footer}}

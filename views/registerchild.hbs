@@ -1,0 +1,63 @@
+{{>head}}
+<title>Company | Register</title>
+{{>navbar}}
+<div style="width: 60%; margin:auto;">
+    <h5 class="heading">
+        Register Child
+    </h5>
+    {{#if error}}
+    <div class="alert alert-danger" role="alert">
+        {{message}}
+    </div>
+    {{/if}}
+    <form action="/registerchild" method="post" enctype="multiport/form-data">
+        <div class="row">
+            <div class="mb-3 col-md-6">
+                <label class="form-label textcolor2">Name</label>
+                <input type="text" class="form-control" id="name" name="name">
+            </div>
+            <div class="mb-3 col-md-6">
+                <label class="form-label textcolor2">Age</label>
+                <input type="text" class="form-control" id="age" name="age">
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-3 col-md-6">
+                <label class="form-label textcolor2">Father's Name</label>
+                <input type="text" class="form-control" id="fathersname" name="fathersname">
+            </div>
+            <div class="mb-3 col-md-6">
+                <label class="form-label textcolor2">Mother's Name</label>
+                <input type="text" class="form-control" id="mothersname" name="mothersname">
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-3 col-md-12">
+                <label class="form-label textcolor2">Location</label>
+                <input type="text" class="form-control" id="location" name="location">
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-3 col-md-6">
+                <label class="form-label textcolor2">State</label>
+                <input type="text" class="form-control" id="state" name="state">
+            </div>
+            <div class="mb-3 col-md-6">
+                <label class="form-label textcolor2">City</label>
+                <input type="text" class="form-control" id="city" name="city">
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-3 col-md-6">
+                <label class="form-label textcolor2">Photo</label>
+                <input type="text" class="form-control" id="photo" name="photo">
+            </div>
+            <div class="mb-3 col-md-6">
+                <label class="form-label textcolor2">Needs</label>
+                <input type="text" class="form-control" id="needs" name="needs">
+            </div>
+        </div>
+    <button type="submit" class="btn heading">Submit</button>
+    </form>
+</div>
+{{>footer}}
