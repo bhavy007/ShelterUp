@@ -67,9 +67,6 @@ Contact Us
 https://user-images.githubusercontent.com/44473716/225775776-13593027-f745-42fa-8475-89a0416caf02.mp4
 
 
-## License
-
-MIT
 
    [node.js]: <http://nodejs.org>
    [express]: <http://expressjs.com>
