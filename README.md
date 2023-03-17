@@ -40,6 +40,10 @@ cd Social-Equity-Project
 npm i
 nodemon app.js
 
+## Presentation
+
+Link: https://app.pitch.com/app/public/player/4cfe679e-88b8-4adc-b964-02f1e7517262
+
 ## Screenshots
 
 Home Page
